@@ -1,24 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-    int i, j;
+/**
+ * main - Entry point.
+ *
+ * Return: Always 0 (Success)
+ */
 
-    for (i = 0; i <= 99; i++) {
-        for (j = i; j <= 99; j++) {
-            putchar('0' + i / 10);
-            putchar('0' + i % 10);
-            putchar(' ');
-            putchar('0' + j / 10);
-            putchar('0' + j % 10);
+int main(void)
+{
+	int i, j, k, l;
 
-            if (!(i == 99 && j == 99)) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-
-    putchar('\n');
-    return 0;
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			for (k = 0; k <= 9; k++)
+			{
+				for (l = 0; l <= 9; l++)
+				{
+					if (i == j && j == k && k == l)
+					{
+						continue;
+					}
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(k + '0');
+					putchar(l + '0');
+					if (i == 9 && j == 9 && k == 9 && l == 9)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-
