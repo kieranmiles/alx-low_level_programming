@@ -1,21 +1,20 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - a program that print _putchar
- * return 0 (successful)
+ * main - the function of the program
+ *
+ * Return: Always 0 (Successful)
  */
 
-int main (void)
+int main(void)
 {
-		_putchar('_');
-		_putchar('p');
-		_putchar('u');
-		_putchar('t');
-		_putchar('c');
-		_putchar('h');
-		_putchar('a');
-		_putchar('r');
-		_putchar('\n');
+	char myFunction[8] = "_putchar";
+	int i;
 
-	printf(_putchar)	
-		return (0);
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(myFunction[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
