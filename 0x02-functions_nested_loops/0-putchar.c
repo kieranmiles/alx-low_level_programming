@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
- * main - print _putchar
- *witten by kieran
- * return: 0 (successful)
+ * main - a program that print _putchar
+ * return 0 (successful)
  */
 
 int main (void)
 {
-	printf 
 		_putchar('_');
 		_putchar('p');
 		_putchar('u');
@@ -17,5 +15,7 @@ int main (void)
 		_putchar('a');
 		_putchar('r');
 		_putchar('\n');
+
+	printf(_putchar)	
 		return (0);
 }
